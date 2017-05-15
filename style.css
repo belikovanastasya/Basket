@@ -1,0 +1,166 @@
+
+*{
+	box-sizing: border-box;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;	
+}
+a{
+	text-decoration: none;
+}
+ p{
+	margin-top: 0;
+	font-size: 18px;
+}
+h2{
+	margin: 0;
+	text-align: center;
+}
+.wrapper{
+	margin: 0 auto;
+	height: 100%;
+}
+ .container{
+	width: 100%;
+	height: 100%;
+}
+.basket-container{
+	width: 100%;
+	height: auto;
+	border:1px solid #b4b4b4;
+	padding:10px;
+	margin-top: 10px;
+}
+.basket-content{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.basket-content input, .basket-items input{
+	width: 34px;
+	height: 34px;
+	border:1px solid #b4b4b4;
+	padding: 0;	
+	outline: none;
+	background: transparent;
+	text-align: center;
+
+}
+.basket-content p{
+	margin-top: 0px;
+}
+.quantity{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.quantity li{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	border:1px solid #b4b4b4;
+
+}
+.sum{
+	width: 175px;
+	height: 34px;
+	margin: 15px auto 15px auto;
+}
+
+ .btn{
+ 	display: block;
+ 	width: 175px;
+ 	height: 34px;
+ 	border:1px solid black; 
+ 	margin: 15px auto 15px auto;
+ }
+
+.basket-title{
+	display: none;
+	list-style: none;
+}
+.basket-title li{
+	display: inline-block;
+	width: 16%;
+	text-align: center;
+}
+.mobile{
+	display: block;
+}
+.basket-items{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+.basket-items li{
+	display: inline-block;
+	width: 16%;
+	text-align: center;
+}
+
+
+@media (min-width: 320px) {
+	.wrapper{
+		max-width: 290px;
+		margin: 0 auto;
+	}
+	.basket-img{
+		width: 50%;
+		float: left;
+	}
+   	.basket-content{
+   		width: 50%;
+   		float: right;
+   	}
+   	.close{
+   		display: block;
+   		width: 20px;
+   		height: 20px;
+   		float: right;
+   		background: url(close.png);
+   		background-repeat: no-repeat;
+   		background-position: center center;
+   	}
+    }
+     @media (min-width: 480px) {
+   		.wrapper{
+		max-width: 450px;
+	}
+    }
+
+     @media (min-width: 768px) {
+   			.wrapper{
+		max-width: 738px;
+	}
+	.pull-right{
+		float: right;
+	}
+	.pull-left{
+		float: left;
+	}
+	.basket-title{
+		display: block;
+	}
+	.mobile{
+		display: block;
+	}
+
+    }
+
+      @media (min-width: 992px) {
+   			.wrapper{
+		max-width: 962px;
+	}
+    }
+
+    
+
+       @media (min-width: 1200px) {
+   			.wrapper{
+		max-width:1170px;
+	}
+    }
